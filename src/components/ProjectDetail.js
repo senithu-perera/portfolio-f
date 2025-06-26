@@ -156,7 +156,7 @@ const ProjectDetail = () => {
       githubLink: "#"
     },
 
-    "Arduino Room State monitoring system": {
+    "Arduino Room State Monitoring System": {
       title: "Arduino Room State Monitoring System",
       images: [AR1, AR2, AR3, AR4, AR5],
       videos: [
