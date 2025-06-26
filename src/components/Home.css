@@ -1,0 +1,264 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+    .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Full height of the viewport */
+    background: url(../assets/img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 0 2rem;
+  }  .buttons-hire-cv button{
+    margin-left: 20px;
+    background: transparent;
+    border: none;
+  }
+  /* Image Styles */
+  .logo-img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .logo-img:hover{
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  /* Content Container */
+  .content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-left: 2rem;
+  }
+
+  .content-container h1{
+    color: #ffffff;
+  }
+  
+  .dynamic-text {
+    color: #ff6f61; /* Highlighted text color */
+    font-weight: bold;
+  }
+  
+  .hire-me-button {
+    margin-top: 1rem;
+    margin: 10px;
+    position: relative;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1; /* Ensure the text is above the pseudo-element */
+  }
+  
+  .hire-me-button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: -1; /* Ensure the pseudo-element is below the text */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .hire-me-button:hover::before {
+    width: 100%;
+  }
+  
+  .hire-me-button:hover {
+    color: #000;
+  }
+  
+  /* Typing Animation */
+  .dynamic-text::after {
+    content: "|";
+    font-weight: bold;
+    animation: blink 0.5s step-end infinite;
+  }
+  /* Social Links Container */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Space between icons */
+    margin-top: 2rem;
+  }
+  
+  /* Individual Social Icons */
+  .social-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #ffffff; /* White border */
+    color: #fff; /* White icon color */
+    font-size: 1.5rem; /* Icon size */
+    border-radius: 50%; /* Circle shape */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    background-color: #ffffff; /* Change background color on hover */
+    color: #000000;
+  }
+  
+  
+  @keyframes blink {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }    /* Responsive Design */
+  @media (max-width: 920px) {
+    .home {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      min-height: 100vh;
+      padding: 20px;
+      background-attachment: scroll;
+      justify-content: center;
+    }
+
+    .logo-img {
+      width: 80%;
+      max-width: 500px;
+      margin-bottom: 2rem;
+      order: 1;
+    }
+
+    .content-container {
+      margin-left: 0;
+      width: 100%;
+      order: 2;
+    }
+
+    .content-container h1 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .hire-me-button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1.2rem;
+      margin: 8px;
+    }
+
+    .social-links {
+      gap: 2.5rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+    }
+  }
+  /* Additional responsive breakpoints */
+  @media (max-width: 480px) {
+    .home {
+      padding: 15px;
+    }
+
+    .logo-img {
+      max-width: 300px;
+      margin-bottom: 1.5rem;
+      padding-top: 100px;
+    }
+
+    .content-container h1 {
+      font-size: 1.4rem;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .hire-me-button {
+      padding: 0.7rem 1.2rem;
+      font-size: 1rem;
+      margin: 5px;
+    }
+
+    .buttons-hire-cv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 1rem 0;
+    }
+
+    .buttons-hire-cv .hire-me-button {
+      width: 100%;
+      max-width: 200px;
+      text-align: center;
+    }
+
+    .social-links {
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .social-icon {
+      width: 45px;
+      height: 45px;
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 320px) {
+    .home {
+      padding: 10px;
+    }
+
+    .logo-img {
+      width: 80%;
+      max-width: 180px;
+      margin-bottom: 1rem;
+    }
+
+    .content-container h1 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .hire-me-button {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .social-links {
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      font-size: 0.9rem;
+    }
+  }
+  

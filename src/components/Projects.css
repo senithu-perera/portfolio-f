@@ -1,0 +1,121 @@
+/* Projects Section */
+.projects {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 4rem 2rem;
+  }
+  
+  .projects-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #000;
+  }
+  
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three projects per row */
+    gap: 2rem; /* Space between grid items */
+  }
+  
+  /* Project Card */
+  .project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-image-container {
+    position: relative;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.1); /* Slight zoom-in effect */
+  }
+  
+  /* Sliding Overlay on Hover */
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black tint */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.5s ease; /* Smooth sliding animation */
+  }
+  
+  .project-card:hover .project-overlay {
+    transform: translateX(100%); /* Slide in from left to right */
+  }
+  
+  /* Project Info in Overlay */
+  .project-info {
+    color: #fff;
+    text-align: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s ease 0.2s; /* Fade in after sliding completes */
+  }
+  
+  .project-card:hover .project-info {
+    opacity: 1; /* Fade in text */
+  }
+  
+  .project-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-info p {
+    font-size: 1rem;
+    margin: 30px;
+  }
+  
+  .project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff6f61;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: #e0554f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .project-cards {
+      grid-template-columns: repeat(2, 1fr); /* Two projects per row on smaller screens */
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-cards {
+      grid-template-columns: 1fr; /* One project per row on very small screens */
+    }
+  }
+  
