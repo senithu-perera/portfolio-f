@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio-f/static/css/main.d00c6aba.css",
-    "main.js": "/portfolio-f/static/js/main.c9c5f47c.js",
+    "main.js": "/portfolio-f/static/js/main.9f88a0e3.js",
     "static/js/156.cdbfd3bd.chunk.js": "/portfolio-f/static/js/156.cdbfd3bd.chunk.js",
     "static/media/TimeOvrride-bg.png": "/portfolio-f/static/media/TimeOvrride-bg.6c5668610bddd211c1f5.png",
     "static/media/website.png": "/portfolio-f/static/media/website.7f474a8885789150432a.png",
     "static/media/blind-assist-system.png": "/portfolio-f/static/media/blind-assist-system.3e4c7b660c616993917d.png",
+    "static/media/DP.png": "/portfolio-f/static/media/DP.e47d66d02297cee9bf46.png",
     "static/media/mustang.png": "/portfolio-f/static/media/mustang.7a64fbab07124a3debe1.png",
-    "static/media/DP.png": "/portfolio-f/static/media/DP.8195a895fca27c584551.png",
     "static/media/background.png": "/portfolio-f/static/media/background.680eddc6865049ee34a8.png",
     "static/media/fa-solid-900.ttf": "/portfolio-f/static/media/fa-solid-900.ad1782c70927ebc5bc87.ttf",
     "static/media/House-Price-Prediction.jpg": "/portfolio-f/static/media/House-Price-Prediction.7b1066d381aa2b38a479.jpg",
@@ -36,11 +36,11 @@
     "static/media/fa-v4compatibility.woff2": "/portfolio-f/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "index.html": "/portfolio-f/index.html",
     "main.d00c6aba.css.map": "/portfolio-f/static/css/main.d00c6aba.css.map",
-    "main.c9c5f47c.js.map": "/portfolio-f/static/js/main.c9c5f47c.js.map",
+    "main.9f88a0e3.js.map": "/portfolio-f/static/js/main.9f88a0e3.js.map",
     "156.cdbfd3bd.chunk.js.map": "/portfolio-f/static/js/156.cdbfd3bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d00c6aba.css",
-    "static/js/main.c9c5f47c.js"
+    "static/js/main.9f88a0e3.js"
   ]
 }
