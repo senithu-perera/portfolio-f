@@ -2,7 +2,7 @@
   "name": "portfolio-f",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/portfolio-f",
+  "homepage": "https://senithu-perera.github.io/portfolio-f",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.1",
     "bootstrap": "^5.3.3",
